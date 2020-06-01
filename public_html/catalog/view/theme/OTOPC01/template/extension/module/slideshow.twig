@@ -1,0 +1,69 @@
+<div class="top-column col-sm-9">
+<div class="slideshow-panel col-sm-12">
+<div class="otloading-bg otloader"></div>
+<div class="swiper-viewport">
+  <div id="slideshow{{ module }}" class="gallery-top slideshow-main swiper-container">
+    <div class="swiper-wrapper"> 
+	  {% for banner in banners %}
+      	<div class="swiper-slide text-center">
+			{% if banner.link %}
+				<a>
+				<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+				</a>
+				{% else %}
+				<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+			{% endif %}
+		</div>
+      {% endfor %}
+   </div>
+   	<div class="swiper-pagination slideshow{{ module }}"></div>
+  <div class="swiper-pager">
+    <div class="swiper-button-prev"></div>
+	<div class="swiper-button-next"></div>
+  </div>
+  </div>
+  
+  <div id="slideshow{{ module }}" class="gallery-thumbs slideshow-main swiper-container">
+    <div class="swiper-wrapper"> 
+	  {% for banner in banners %}
+      	<div class="swiper-slide text-center">
+			{% if banner.link %}
+				<a>
+				   <div class="title">{{ banner.title }}</div>
+				<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+				</a>
+				{% else %}
+				<img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-responsive" />
+			{% endif %}
+		</div>
+      {% endfor %}
+   </div>
+  </div>
+</div>
+</div>
+</div>
+<script type="text/javascript"><!--
+var galleryTop = new Swiper('.gallery-top', {
+	  autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  	loop: true,
+	loopedSlides: 4,
+    });
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      slidesPerView: 4,
+	  centeredSlides: false,
+      touchRatio: 0.2,
+      slideToClickedSlide: true,
+	  loop: true,
+	  loopedSlides: 4,
+    });
+    galleryTop.controller.control = galleryThumbs;
+    galleryThumbs.controller.control = galleryTop;
+
+--></script>

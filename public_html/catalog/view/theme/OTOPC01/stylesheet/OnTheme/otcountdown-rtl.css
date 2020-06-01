@@ -1,0 +1,51 @@
+.ot-special-countdown {
+  float: right;
+}
+.countdown-images {
+	border-left: 1px solid #eeeeee;
+	border-right: medium none;
+	float: right;
+}
+.countdown-labele .hot {
+	left: 15px;
+	right: auto;
+}
+.special-countdown .product-thumb .thumb-description {
+  float: left;
+}
+.special-countdown .percent {
+	text-align: right;
+}
+.item-countdown div::after {
+	left: -19px;
+	right: auto;
+}
+.item-countdown div {
+	margin: 0 0 0 30px;
+	float: right;
+}
+.ot-special-countdown .products-carousel.owl-carousel .owl-buttons {
+	left: 25px;
+	right: auto;
+}
+@media (max-width: 767px) {
+.countdown-images {
+	border: none;
+}
+.special-countdown .percent {
+  text-align: center;
+}
+.item-countdown div {
+	float: none;
+}
+}
+@media (max-width: 480px) {
+.item-countdown div {
+	margin: 0 0 0 8px;
+}
+.item-countdown div::after {
+	left: -8px;
+	right: auto;
+}
+
+}

@@ -1,0 +1,136 @@
+</div>
+<footer>
+{% if footer_top %}
+<div class="footer-top">
+{{ footer_top }}
+</div>
+{% endif %}
+<div class="footer-container">
+<div class="container">
+	<div class="row">
+	{% if footer_left %}
+	{# <div class="footer-column footer-left-cms col-sm-3">
+	{{ footer_left }}
+	</div> #}
+	{% endif %}
+      <!--<div class="col-sm-3 footer-column {{ 'footer-' ~ text_service|replace({' ': '-'})|lower }}">
+        <h5>{{ text_service }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ contact }}">{{ text_contact }}</a></li>
+          <li><a href="{{ return }}">{{ text_return }}</a></li>
+          <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+        </ul>
+      </div>-->
+      <div class="col-sm-4 footer-column {{ 'footer-' ~ text_extra|replace({' ': '-'})|lower }}">
+        <h5>{{ text_extra }}</h5>
+        <ul class="list-unstyled">
+          <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+          <li><a href="{{ special }}">{{ text_special }}</a></li>
+		  <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 footer-column {{ 'footer-' ~ text_account|replace({' ': '-'})|lower }}">
+        {# <h5>{{ text_account }}</h5> #}
+        <h5>Рекомендуем</h5>
+        <ul class="list-unstyled">
+          {# <li><a href="{{ account }}">{{ text_account }}</a></li>
+          <li><a href="{{ order }}">{{ text_order }}</a></li>
+          <li><a href="{{ wishlist }}">{{ text_wishlist }}</a></li>
+          <li><a href="{{ newsletter }}">{{ text_newsletter }}</a></li>
+		  <li><a href="{{ return }}">{{ text_return }}</a></li> #}
+          <li><a href="index.php?route=product/category&path=2">Настенные сплит-системы</a></li>
+          <li><a href="index.php?route=product/category&path=18">ТВ без абонентской платы</a></li>
+          <li><a href="index.php?route=product/category&path=19">Оборудование для спутникового тв</a></li>
+          <li><a href="index.php?route=product/category&path=31">Оборудование для эфирного тв и IPTV</a></li>
+          <li><a href="index.php?route=product/category&path=35">SMART TV IPTV</a></li>
+        </ul>
+      </div>
+	  {% if informations %}
+      <div class="col-sm-4 footer-column {{ 'footer-' ~ text_information|replace({' ': '-'})|lower }}">
+        <h5>{{ text_information }}</h5>
+        <ul class="list-unstyled">
+         {% for information in informations %}
+          <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+
+	{% if footer_right %}
+	  <div class="footer-column footer-right-cms col-sm-3">
+	 {{ footer_right }}
+	  </div>
+	{% endif %}
+		</div>
+	</div>
+</div>
+<div class="footer-bottom">
+	<div class="container">
+	<div class="footer-bottom-link col-sm-6">
+	    <address class="footer-address">
+	        {{ footer_address }}
+	    </address>
+		<p>{{ copyright }}</p>
+		
+	</div>
+	<div class="footer-bottom-link col-sm-6">
+	    <p class="footer-powered">{{ text_powered }}</p>
+	</div>
+	{# {% if footer_bottom %}
+	<div class="footer-bottom-cms col-sm-6">
+	
+ 	{{ footer_bottom }}
+	</div>
+	{% endif %} #}
+	</div>
+</div>
+</footer>
+
+
+<div class="form-overlay overlay" style="display:none;">
+    <div class="callback-form">
+        <div class="form-close"><i class="fa fa-times"></i></div>
+        {# <form action="{{ action }}" method="post" enctype="multipart/form-data" class="form-horizontal">
+            <label>Ваше имя
+                <input name="your_name" placeholder="Ваше имя" class="form-control">
+            </label>
+            <label>Ваш телефон
+                <input name="your_phone" placeholder="Ваш телефон" class="form-control">
+            </label>
+            {{ captcha }}
+            <input class="btn btn-primary" type="submit">
+        </form> #}
+        {{ formcreator_id49 }}
+    </div>
+</div>
+
+
+<div class="one-click-form-overlay overlay" style="display:none;">
+    <div class="one-click-form">
+        <div class="form-close"><i class="fa fa-times"></i></div>
+        {{ formcreator_id50 }}
+    </div>
+</div>
+
+<script>
+  var createCaptchas = function(){
+    let captchaBlocks = document.querySelectorAll('.g-recaptcha');
+  if(captchaBlocks){
+      captchaBlocks.forEach(function(block, index){
+        block.dataset.indexNum = index;
+      })
+    }
+  }
+</script>
+
+{% for script in scripts %}
+<script src="{{ script }}" type="text/javascript"></script>
+{% endfor %}
+
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</body></html>
