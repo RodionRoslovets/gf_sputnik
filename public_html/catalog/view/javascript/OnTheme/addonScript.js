@@ -45,6 +45,12 @@ $(document).ready(function() {
 		})
 		
 		// end popup callback
+
+		$('.cart_input_block .remove-button').on('click', function(){
+			setTimeout(function(){
+				$('.cart_input_block .refresh-button').trigger('click');
+			}, 500)
+		})
 	
 		$(".user-info a.dropdown-toggle").click(function(){
 			$( ".account-link-toggle" ).slideToggle( "2000" );

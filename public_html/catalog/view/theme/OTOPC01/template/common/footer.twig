@@ -25,10 +25,10 @@
         <h5>{{ text_extra }}</h5>
         <ul class="list-unstyled">
           <li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
-          <li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
-          <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li>
+          {# <li><a href="{{ voucher }}">{{ text_voucher }}</a></li> #}
+          {# <li><a href="{{ affiliate }}">{{ text_affiliate }}</a></li> #}
           <li><a href="{{ special }}">{{ text_special }}</a></li>
-		  <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+          {# <li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li> #}
         </ul>
       </div>
       <div class="col-sm-4 footer-column {{ 'footer-' ~ text_account|replace({' ': '-'})|lower }}">
@@ -54,6 +54,7 @@
          {% for information in informations %}
           <li><a href="{{ information.href }}">{{ information.title }}</a></li>
           {% endfor %}
+          <li><a href="/contact">Контакты</a></li>
         </ul>
       </div>
       {% endif %}

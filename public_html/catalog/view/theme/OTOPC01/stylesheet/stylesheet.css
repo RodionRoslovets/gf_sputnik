@@ -228,7 +228,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
     font-family: "FontAwesome";
     position: absolute;
 	left: auto;
-    right: 15px;
+    right: 5px;
     top: 3px;
 	color: #888888;
 }
@@ -288,7 +288,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 	color: #000;
 }
 .main-category-list .menu-category .dropdown-inner ul.single-dropdown-menu {
-    padding: 20px 0;
+    padding: 20px 10px;
 }
 
 /*.main-category-list.left-main-menu .dropmenu .active_menu {
@@ -1365,10 +1365,13 @@ span.hidden-md, span.hidden-lg {
 	text-shadow: none;
 }
 #cart button.btn {
+	height: 46px;
+    width: 45px;
+    padding: 0;
 	background: #2469d9;
 	border: medium none;
 	float: left;
-	padding: 13px 30px 13px 80px;
+	/* padding: 13px 30px 13px 80px; */
 	position: relative;
 	border-radius: 8px;
 	-moz-border-radius: 8px; 
@@ -1379,7 +1382,7 @@ span.hidden-md, span.hidden-lg {
 	background: url("OnTheme/images/sprite.png") no-repeat scroll -25px -169px;
     content: "";
     height: 46px;
-    left: 20px;
+    left: 0px;
     position: absolute;
     top: 0;
     width: 50px;
@@ -1400,7 +1403,7 @@ span.hidden-md, span.hidden-lg {
 	font-size: 14px;
 	font-weight: 500;
 	height: 16px;
-	left: 42px;
+	left: 20px;
 	line-height: 18px;
 	margin: auto;
 	position: absolute;
@@ -1684,6 +1687,10 @@ header .full-header {
 	}
 	#search .input-lg, #header-search .input-lg {
 		width: 180px;
+	}
+	#ottoplink_block ul.block_content li a{
+		padding:13px 13px;
+		font-size:13px;
 	}
 }
 @media (max-width: 991px) {
@@ -5278,7 +5285,7 @@ h2.price {
 		border: none; 
 	}
 	.box-heading > h3, .title_block .otblock-heading {
-		font-size: 18px;
+		font-size: 13px;
 	}
 	.OTProduct-Tab .tab-box-heading .nav-tabs {
 		width: 100%;

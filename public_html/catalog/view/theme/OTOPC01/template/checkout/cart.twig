@@ -67,8 +67,8 @@
               <td class="text-left"><div class="cart_input_block input-group btn-block" style="max-width: 200px;">
                   <input type="text" name="quantity[{{ product.cart_id }}]" value="{{ product.quantity }}" size="1" class="form-control" />
                   <span class="input-group-btn">
-                  <button type="submit" data-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary main"><i class="fa fa-refresh"></i></button>
-                  <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger" onclick="cart.remove('{{ product.cart_id }}');"><i class="fa fa-times-circle"></i></button>
+                  <button type="submit" data-toggle="tooltip" title="{{ button_update }}" class="btn btn-primary main refresh-button"><i class="fa fa-refresh"></i></button>
+                  <button type="button" data-toggle="tooltip" title="{{ button_remove }}" class="btn btn-danger remove-button" onclick="cart.remove('{{ product.cart_id }}');"><i class="fa fa-times-circle"></i></button>
                   </span></div></td>
               <td class="text-right unit-price">{{ product.price }}</td>
               <td class="text-right total-price">{{ product.total }}</td>
