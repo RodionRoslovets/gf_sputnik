@@ -1,4 +1,4 @@
 <?php
 
-$_['menu_heading_title']  = 'Категории';
+$_['menu_heading_title']  = 'Каталог';
 $_['text_blog']          = 'Блоги';
