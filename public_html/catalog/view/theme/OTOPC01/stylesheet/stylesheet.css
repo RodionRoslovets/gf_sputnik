@@ -3,14 +3,15 @@ html{
 }
 body {
 	background: #fff;
-	font: 400 14px/18px "Poppins",Helvetica,sans-serif;
+	font: 400 14px/18px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 1px;
-	color: #777777;
+	color: #333333;
 	height:100%;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Poppins",Helvetica,sans-serif;
+	font-family: "PT Sans",Helvetica,sans-serif;
 	color: #333333;
+	font-weight:700!important;
 }
 
 /* default font size */
@@ -38,7 +39,7 @@ h6 {
 	font-size: 10.2px;
 }
 a {
-	color: #666666;
+	color: #333333;
 }
 a:hover, a:focus,#column-left .checkbox > label:hover {
     color: #2874f0;}
@@ -53,7 +54,7 @@ small, .small {
 	font-size: 11px;
 }
 label {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: normal;
 }
 select.form-control {
@@ -186,7 +187,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 	-khtml-border-radius: 8px;
 	color: #ffffff;
 	cursor: pointer;
-	font: 500 16px/25px "Poppins",Helvetica,sans-serif;
+	font: 500 16px/25px "PT Sans",Helvetica,sans-serif;
 	margin: 0;
 	padding: 11px 15px;
 	position: relative;
@@ -206,13 +207,13 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 	background: rgba(0, 0, 0, 0);
 	color: #888888;
 	display: block;
-	font: 400 14px/24px "Poppins",Helvetica,sans-serif;
+	font: 400 14px/24px "PT Sans",Helvetica,sans-serif;
 	padding: 8px 25px 8px 0;
 	position: relative;
 	text-transform: capitalize;
 }
 .main-category-list .menu-category .dropdown .dropdown-inner .mega-dropdown-menu li.dropdown > a {
-	font: 400 13px/22px "poppins",Helvetica,sans-serif;
+	font: 400 13px/22px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 0.8px;
 	padding: 0 0 5px;
 	text-transform: uppercase;
@@ -317,7 +318,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 }*/
 .main-category-list.left-main-menu .dropmenu li li.dropdown-inner > a {
     display: inline-block;
-    font: 400 13px/24px "Poppins",sans-serif;
+    font: 400 13px/24px "PT Sans",sans-serif;
     padding: 8px 0;
 	margin: 0 0 15px;
 	color: #333;
@@ -461,7 +462,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 		color: #ffffff;
 		border: none;
 		display: block;
-		font: 400 16px/22px "Poppins",Helvetica,sans-serif;
+		font: 400 16px/22px "PT Sans",Helvetica,sans-serif;
 		position: relative;
 		cursor: pointer;
 		padding: 12px 16px;
@@ -606,7 +607,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
     color: #ffffff;
 	display: block;
 	float: left;
-	font: 400 16px/20px "poppins",sans-serif;
+	font: 400 16px/20px "PT Sans",sans-serif;
 	overflow: hidden;
 	padding: 13px 20px;
 	position: relative;
@@ -716,7 +717,7 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
 /*-----------------------More Menu CSS Start -------------------------------*/
 	   #ot_toplink li.more_menu ul li a {
 		    color: #333333;
-			font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+			font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
 			padding: 2px 20px;
 			text-align: left;
 			text-transform: capitalize;
@@ -852,7 +853,7 @@ input[type="checkbox"] {
 .box-heading > h3, .title_block .otblock-heading {
 	border-bottom: 1px solid #eaeaea;
 	color: #000000;
-	font: 500 20px/26px "Poppins",sans-serif;
+	font: 500 20px/26px "PT Sans",sans-serif;
 	letter-spacing: 0.2px;
 	margin: 0;
 	padding: 15px;
@@ -927,7 +928,7 @@ input[type="checkbox"] {
 	background: none;
 	border: none;
     color: #333333;
-    font: 400 17px/20px "Poppins",Helvetica,sans-serif;
+    font: 400 17px/20px "PT Sans",Helvetica,sans-serif;
     padding: 16px 20px;
     position: relative;
     text-transform: capitalize;
@@ -1115,7 +1116,7 @@ div.required .control-label:before {
 .page-title-wrapper .page-title {
 	color: #222222;
 	float: left;
-	font: 500 18px/28px "Poppins",Helvetica,sans-serif;
+	font: 500 18px/28px "PT Sans",Helvetica,sans-serif;
 	margin: 0;
 }
 #content .category-name {
@@ -1268,7 +1269,7 @@ span.hidden-md, span.hidden-lg {
 .header-phone.pull-left > span
 {
     color: #cccccc;
-	font: "Poppins",Helvetica,sans-serif;
+	font: "PT Sans",Helvetica,sans-serif;
 }
 #top-links .dropdown-menu a:hover,#top-links .dropdown-menu a:focus {
     color: #000;
@@ -1398,7 +1399,7 @@ span.hidden-md, span.hidden-lg {
 #cart .cart-heading {
 	color: #ffffff;
   	display: block;
-	font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+	font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
 }
 #cart #cart-total {
 	bottom: auto;
@@ -1478,7 +1479,7 @@ span.hidden-md, span.hidden-lg {
 	-khtml-border-radius: 25px;
     color: #ffffff;
     float: left;
-    font:400 14px/18px "Poppins",Helvetica,sans-serif;
+    font:400 14px/18px "PT Sans",Helvetica,sans-serif;
     padding: 8px 15px;
     text-transform: capitalize;
 	letter-spacing: 1px;
@@ -1517,11 +1518,11 @@ span.hidden-md, span.hidden-lg {
 #cart .header-cart-toggle .text-left.name > a {
     color: #777777;
     font-size: 14px;
-	font-family: "roboto",Helvetica,sans-serif;
+	font-family: "PT Sans",Helvetica,sans-serif;
 }
 #cart .header-cart-toggle .text-right.amount {
     color: #222;
-    font: 500 14px/20px "Poppins",Helvetica,sans-serif;
+    font: 500 14px/20px "PT Sans",Helvetica,sans-serif;
     text-align: left;
 }
 .header-cart-toggle .table .text-center img{
@@ -1535,12 +1536,12 @@ span.hidden-md, span.hidden-lg {
 #cart .header-cart-toggle .text-right.price-total {
     color: #222;
 	text-align: right;
-    font: 500 16px/24px "Poppins",Helvetica,sans-serif;
+    font: 500 16px/24px "PT Sans",Helvetica,sans-serif;
     white-space: nowrap;
 }
 .cart-form .table-bordered td.text-right.unit-price {
     color: #333;
-    font: 500 16px/20px "Poppins",Helvetica,sans-serif;
+    font: 500 16px/20px "PT Sans",Helvetica,sans-serif;
 }
 .cart-form .cart_input_block.input-group {
 	display: inline-block;
@@ -1878,7 +1879,7 @@ header {
 }
 #menu .list-unstyled.childs_1.mega-dropdown-menu .dropdown > a {
     color:#414141;
-    font: 400 14px/22px "Poppins",Helvetica,sans-serif;
+    font: 400 14px/22px "PT Sans",Helvetica,sans-serif;
     padding:0;
     text-transform: capitalize;
     width: 100%;
@@ -1901,7 +1902,7 @@ header {
 #menu .nav > li > span {
 	color: #414141;
 	display: block;
-    font: 400 15px/22px "Poppins",Helvetica,sans-serif;
+    font: 400 15px/22px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 0.8px;
 	padding: 20px;
     text-transform: capitalize;
@@ -1924,7 +1925,7 @@ header {
 #menu .dropdown-inner a {
 	color: #414141;
     display: block;
-    font-family: "Poppins",Helvetica,sans-serif;
+    font-family: "PT Sans",Helvetica,sans-serif;
     font-size: 13px;
     line-height: 26px;
     min-width: 160px;
@@ -1948,7 +1949,7 @@ header {
 #menu #category {
 	color: #000000;
 	float: left;
-	font: 700 14px/40px "Poppins",sans-serif;
+	font: 700 14px/40px "PT Sans",sans-serif;
 	text-transform: uppercase;
 }
 #menu #category:hover {
@@ -2210,7 +2211,7 @@ header {
 }
 .gallery-thumbs .swiper-slide a .title {
   color: #ffffff;
-  font: 400 14px/18px "Poppins",Helvetica,sans-serif;
+  font: 400 14px/18px "PT Sans",Helvetica,sans-serif;
   padding: 28px 0;
 }
 .gallery-thumbs .swiper-slide a img {
@@ -2408,7 +2409,7 @@ header {
 }
 .category-list h5 a {
 	color: #888888;
-	font: 400 16px/22px "Poppins",sans-serif;
+	font: 400 16px/22px "PT Sans",sans-serif;
 	text-transform: capitalize;
 }
 .category-list li:hover h5  a,
@@ -2417,7 +2418,7 @@ header {
 }
 .category-filter label {
     color: #222;
-    font: 500 13px/20px "Poppins",Helvetica,sans-serif;
+    font: 500 13px/20px "PT Sans",Helvetica,sans-serif;
    	margin: 0;
 	padding: 0;
 	white-space:nowrap;
@@ -2510,7 +2511,7 @@ header {
 .product-thumb .sale-icon,.product-sale-icon {
 	color: #2874f0;
 	display: none;
-	font: 400 14px/18px "poppins",Helvetica,sans-serif;
+	font: 400 14px/18px "PT Sans",Helvetica,sans-serif;
 	left: auto;
 	letter-spacing: 1px;
 	position: absolute;
@@ -2731,7 +2732,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 	background: none;
     color: #888888;
     cursor: pointer;
-	font-family:"Poppins",Helvetica,sans-serif;
+	font-family:"PT Sans",Helvetica,sans-serif;
 	font-weight: 400;
     line-height: 25px;
     padding: 2px 0 0;
@@ -2762,7 +2763,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 	background: none;
 	color: #111111;
 	float: left;
-	font: 400 16px/18px "Poppins",Helvetica,sans-serif;
+	font: 400 16px/18px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 1px;
 	margin: 0;
 	padding: 0;
@@ -2778,7 +2779,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 #column-left .box-heading > h3 {
 	border: medium none;
 	color: #111111;
-	font: 400 16px/18px "Poppins",Helvetica,sans-serif;
+	font: 400 16px/18px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 1px;
 	margin: 0;
 	padding: 0;
@@ -2807,7 +2808,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 #column-left .option-filter .checkbox > label,
 #column-right .option-filter .checkbox > label {
     color: #888888;
-	font: 400 13px/20px "Poppins",Helvetica,sans-serif;
+	font: 400 13px/20px "PT Sans",Helvetica,sans-serif;
 	text-transform:capitalize;
 }
 
@@ -2837,7 +2838,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 #column-right .option-filter .list-group-items .list-group-item
 {
     color: #333333;
-	font:400 13px/28px "Poppins",Helvetica,sans-serif;
+	font:400 13px/28px "PT Sans",Helvetica,sans-serif;
 	padding:2px 0;
 	float:left;
 	width:100%;
@@ -3006,7 +3007,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 }
 .category-list > h3 {
     color: #333333;
-	font: 500 16px/26px "Poppins",sans-serif;
+	font: 500 16px/26px "PT Sans",sans-serif;
 	margin: 0 0 10px;
 	text-transform: capitalize;
 }
@@ -3077,13 +3078,13 @@ button.list-group-item:focus, button.list-group-item:hover{
 #column-left .list-products .row > div .caption .price,
 #column-right .products-list .row > div .caption .price,
 #column-right .list-products .row > div .caption .price {
-	font: 500 14px/18px "Poppins",Helvetica,sans-serif;
+	font: 500 14px/18px "PT Sans",Helvetica,sans-serif;
 	margin: 0;
 	padding: 3px 0 5px;
 }
 #column-left .product-thumb .price-new,
 #column-right .product-thumb .price-new {
-	font: 500 14px/18px "Poppins",Helvetica,sans-serif;
+	font: 500 14px/18px "PT Sans",Helvetica,sans-serif;
 }
 #column-left .product-thumb .price-old,
 #column-right .product-thumb .price-old {
@@ -3112,7 +3113,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 #column-right .product-thumb .button-group .btn-cart > span {
 	color: #777777;
 	display: block !important;
-	font: 400 14px/18px "roboto",Helvetica,sans-serif;
+	font: 400 14px/18px "PT Sans",Helvetica,sans-serif;
 	text-transform: capitalize;
 }
 #column-left .product-thumb h4 a:hover,
@@ -3198,7 +3199,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 	float: left;
 }
 .product-details .product-options h3 {
-    font: 500 18px/24px "Poppins",Helvetica,sans-serif;
+    font: 500 18px/24px "PT Sans",Helvetica,sans-serif;
 }
 .product-details .rating{display:table;}
 .product-total-review .fa.fa-comment, .product-write-review .fa.fa-pencil {
@@ -3265,7 +3266,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 }
 .product-details ul.product-price h2
 {
-	font: 500 22px/20px "Poppins",Helvetica,sans-serif;
+	font: 500 22px/20px "PT Sans",Helvetica,sans-serif;
 }
 .product-options .product-quantity {
 	clear: both;
@@ -3312,7 +3313,7 @@ button.list-group-item:focus, button.list-group-item:hover{
   border-bottom: 1px solid #ebebeb;
 }
 #tab-review label.control-label {
-	font:500 13px/20px "Poppins",Helvetica,sans-serif;
+	font:500 13px/20px "PT Sans",Helvetica,sans-serif;
 	color:#222;
 	margin-bottom:10px;
 }
@@ -3327,7 +3328,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 	background: none;
 	border: none;
 	color: #878787;
-	font: 400 16px/22px "poppins",Helvetica,sans-serif;
+	font: 400 16px/22px "PT Sans",Helvetica,sans-serif;
 	margin: 0;
 	padding: 10px 0;
 	position: relative;
@@ -3344,7 +3345,7 @@ button.list-group-item:focus, button.list-group-item:hover{
   width: 100%;
 }
 .product-product #tab-description > h3, .product-product #form-review > h2 {
-    font-family: "Poppins",Helvetica,sans-serif;
+    font-family: "PT Sans",Helvetica,sans-serif;
 	font-size:18px;
 	color:#777;
 }
@@ -3354,7 +3355,7 @@ button.list-group-item:focus, button.list-group-item:hover{
 	color:#414141;
 }
 .checkout-cart #accordion .panel-heading {padding: 0px; border-color:#eaeaea; background: #ffffff;}
-.checkout-cart #accordion .panel-heading a {padding: 10px 15px;font-family:"Poppins",Helvetica,sans-serif; font-weight:normal;}
+.checkout-cart #accordion .panel-heading a {padding: 10px 15px;font-family:"PT Sans",Helvetica,sans-serif; font-weight:normal;}
 .checkout-cart #accordion label.control-label {
 	width: 100%;
 	padding: 0px;
@@ -3494,9 +3495,9 @@ body.product-compare .table-product-image {
 	float:left;
 	width:100%;
 }
-.checkout-cart h2 {font-family: "Poppins",Helvetica,sans-serif;}
+.checkout-cart h2 {font-family: "PT Sans",Helvetica,sans-serif;}
 .checkout-cart tr:last-child > td.text-right.heading-title {
-	font: 700 18px/22px "Poppins",Helvetica,sans-serif !important;
+	font: 700 18px/22px "PT Sans",Helvetica,sans-serif !important;
 	color: #555454;
 	text-transform: capitalize;
 }
@@ -3504,7 +3505,7 @@ body.product-compare .table-product-image {
 	background: #FFF;
 	border: 1px solid #eaeaea;
     color: #444;
-	font-family:"Poppins",Helvetica,sans-serif;
+	font-family:"PT Sans",Helvetica,sans-serif;
 	font-size:14px;
 	line-height:18px;
 	letter-spacing:0.6px;
@@ -3513,10 +3514,10 @@ body.product-compare .table-product-image {
 }
 .cart-form .table-bordered tbody  td.text-right.total-price {
 	color: #222;
-	font: 500 16px/20px "Poppins",Helvetica,sans-serif;
+	font: 500 16px/20px "PT Sans",Helvetica,sans-serif;
 }
-.checkout-checkout h4 {font-family: "Poppins",Helvetica,sans-serif;}
-.affiliate-login h2, .account-login h2, .checkout-checkout h2, .product-search h2 {color: #333333;font: 400 23px/25px "Poppins",Helvetica,sans-serif;}
+.checkout-checkout h4 {font-family: "PT Sans",Helvetica,sans-serif;}
+.affiliate-login h2, .account-login h2, .checkout-checkout h2, .product-search h2 {color: #333333;font: 400 23px/25px "PT Sans",Helvetica,sans-serif;}
 .well {
 	background: #ffffff;
 	box-shadow: none;
@@ -3530,12 +3531,12 @@ body.product-compare .table-product-image {
 .product-manufacturer .a-link-heading p, .product-manufacturer .a-link-heading h2 {line-height: 38px;}
 .product-manufacturer .a-link-group {
     color: #222222;
-    font-family: Poppins;
+    font-family: PT Sans;
     font-size: 16px;
     margin-bottom: 10px;
 }
 	
-.terms-condition h3{font: 400 18px/22px "Poppins",Helvetica,sans-serif;color:#bc3b36;}
+.terms-condition h3{font: 400 18px/22px "PT Sans",Helvetica,sans-serif;color:#bc3b36;}
 
 
 
@@ -3753,7 +3754,7 @@ footer .footer-column .list-unstyled {
 footer a {
 	color: #878787;
 	cursor: pointer;
-	font: 400 14px/28px "poppins",sans-serif;
+	font: 400 14px/28px "PT Sans",sans-serif;
 }
 .footer-column .list-unstyled li a::before {
 	color: #777777;
@@ -3771,7 +3772,7 @@ footer a:focus,
 footer .footer-column h5 {
 	color: #ffffff;
 	cursor: pointer;
-	font: 500 19px/22px "Poppins",sans-serif;
+	font: 500 19px/22px "PT Sans",sans-serif;
 	letter-spacing: 0.6px;
 	margin: 0 0 20px;
 	text-transform: capitalize;
@@ -3953,7 +3954,7 @@ footer .footer-column h5 {
 	-moz-border-radius: 25px; 
 	-webkit-border-radius: 25px; 
 	-khtml-border-radius: 25px;
-	font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+	font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
     letter-spacing: 1px;
 	color: #ffffff;
 	text-transform: capitalize;
@@ -3979,7 +3980,7 @@ footer .footer-column h5 {
 	-webkit-border-radius: 8px; 
 	-khtml-border-radius: 8px;
 	color: #000000;
-	font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+	font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 1px;
 	padding: 6px 20px;
 	text-transform: capitalize;
@@ -3990,7 +3991,7 @@ footer .footer-column h5 {
 	border-color: #fed700;
 	color: #000000;
 	float: left;
-	font-family: "poppins",Helvetica,sans-serif;
+	font-family: "PT Sans",Helvetica,sans-serif;
 	font-size: 14px;
 	letter-spacing: 1px;
 	line-height: 26px;
@@ -4222,7 +4223,7 @@ footer .footer-column h5 {
 	text-align: left;
 }
 .product-thumb h4 {
-	font: 400 14px/16px "roboto",Helvetica,sans-serif;
+	font: 400 14px/16px "PT Sans",Helvetica,sans-serif;
 	margin: 5px 0 10px;
 	overflow: hidden;
 	padding: 0;
@@ -4277,19 +4278,19 @@ h2.price {
 }
 .product-thumb .price {
 	color: #111111;
-	font: 500 15px/18px "poppins",Helvetica,sans-serif;
+	font: 500 15px/18px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 0;
 	margin: 0;
 }
 .product-thumb .price-new {
 	margin: 0;
-	font: 500 15px/18px "poppins",Helvetica,sans-serif;
+	font: 500 15px/18px "PT Sans",Helvetica,sans-serif;
 }
 .product-thumb .price-old
 {
 	color: #777777;
 	text-decoration: line-through;
-	font: 400 14px/16px "poppins",Helvetica,sans-serif;
+	font: 400 14px/16px "PT Sans",Helvetica,sans-serif;
 }
 .product-thumb .price-tax {
 	color: #999;
@@ -4357,7 +4358,7 @@ h2.price {
    
     color: #fff;
     display: inline-block !important;
-    font: 400 14px/36px "Poppins",Helvetica,sans-serif;
+    font: 400 14px/36px "PT Sans",Helvetica,sans-serif;
 	letter-spacing: 0.4px;
 	text-transform: capitalize;
 	vertical-align: top;
@@ -4509,7 +4510,7 @@ h2.price {
   border-color: #fed700;
   color: #000000;
   float: left;
-  font-family: "poppins",Helvetica,sans-serif;
+  font-family: "PT Sans",Helvetica,sans-serif;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 26px;
@@ -5471,7 +5472,7 @@ h2.price {
 }
 #otcmsheader .otheader-service {
   color: #fff;
-  font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+  font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
   padding: 10px 0;
 }
 #otcmsheader .otheader-service::before {
@@ -5505,7 +5506,7 @@ h2.price {
 }
 @media(max-width:543px){
 	#otcmsheader .otheader-service{
-		font:400 14px/18px "Poppins",Helvetica,sans-serif;
+		font:400 14px/18px "PT Sans",Helvetica,sans-serif;
 	}
 	#otcmsheader .otheader-service::before{
 		float:none;
@@ -5529,12 +5530,12 @@ h2.price {
 }
 #otcmsheaderservices .content .headertitle {
   color: #ffffff;
-  font: 400 16px/20px "Poppins",Helvetica,sans-serif;
+  font: 400 16px/20px "PT Sans",Helvetica,sans-serif;
   text-transform: uppercase;
 }
 #otcmsheaderservices .content .desc {
   color: #ffffff;
-  font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+  font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
   text-transform: capitalize;
 }
 #otcmsheaderservices .otheaderservice {
@@ -5658,13 +5659,13 @@ h2.price {
 }
 #otcmsservices .otcmsservices .service .service-content .service-title {
   color: #222222;
-  font: 500 16px/26px "Poppins",Helvetica,sans-serif;
+  font: 500 16px/26px "PT Sans",Helvetica,sans-serif;
   letter-spacing: 0.4px;
   text-transform: capitalize;
 }
 #otcmsservices .otcmsservices .service .service-content .service-desc {
   color: #888888;
-  font: 400 14px/20px "Poppins",Helvetica,sans-serif;
+  font: 400 14px/20px "PT Sans",Helvetica,sans-serif;
   letter-spacing: 0.4px;
 }
 @media(max-width:1499px){
@@ -5849,25 +5850,25 @@ h2.price {
 }
 #otcmsclient .otclient-content ul li .client-content > h4 {
   color: #111111;
-  font: 500 16px/22px "Poppins",Helvetica,sans-serif;
+  font: 500 16px/22px "PT Sans",Helvetica,sans-serif;
   text-transform: capitalize;
   margin-top: 0;
 }
 #otcmsclient .testimonial-title {
   color: #ffffff;
-  font: 500 18px/22px "Poppins",Helvetica,sans-serif;
+  font: 500 18px/22px "PT Sans",Helvetica,sans-serif;
   padding: 10px 0;
   text-transform: uppercase;
   margin:0;
 }
 #otcmsclient .otclient-content .client-content p {
     color: #fff;
-    font: 400 14px/24px "Poppins", Helvetica, sans-serif;
+    font: 400 14px/24px "PT Sans", Helvetica, sans-serif;
     letter-spacing: 0.8px;
 	margin:0;
 }
 #otcmsclient .otclient-content ul li .client-content .user-designation {
-    font: italic 300 13px/20px "Poppins",Helvetica,sans-serif;
+    font: italic 300 13px/20px "PT Sans",Helvetica,sans-serif;
     letter-spacing: 0.8px;
     text-transform: capitalize;
     color: #fff;
@@ -5921,10 +5922,10 @@ h2.price {
 	}
 	#otcmsclient .otclient-content ul li .client-content > h4{
 		margin:0;
-		font:500 14px/20px "Poppins",Helvetica,sans-serif;
+		font:500 14px/20px "PT Sans",Helvetica,sans-serif;
 	}
 	#otcmsclient .otclient-content .client-content p{
-		font:400 12px/20px "Poppins",Helvetica,sans-serif;
+		font:400 12px/20px "PT Sans",Helvetica,sans-serif;
 		margin:0;
 	}
 	#otcmsclient .otclient-content ul li .client-content .user-designation{
@@ -6241,7 +6242,7 @@ footer .footer-right #footer-right {
 .footer-top-block .news-letter-inner > h4 {
     color: #ffffff;
 	float: left;
-	font: 500 26px/44px "Poppins",sans-serif;
+	font: 500 26px/44px "PT Sans",sans-serif;
 	letter-spacing: 0.6px;
 	margin: 0;
 	padding: 14px 0 14px 110px;
@@ -6382,7 +6383,7 @@ footer .footer-right #footer-right {
 }
 #otcmsfooterservice .otcmsfooterservice .otfooterservice .service-block-content .footer-service-desc .service-heading {
     color:#ffffff;
-    font: 400 16px/18px "Poppins", Helvetica, sans-serif;
+    font: 400 16px/18px "PT Sans", Helvetica, sans-serif;
     letter-spacing: 0.4px;
     text-transform: capitalize;
 }
@@ -6438,7 +6439,7 @@ footer .footer-right #footer-right {
 #otcmsfooter .h3 {
 	color: #ffffff;
 	cursor: pointer;
-	font: 500 19px/22px "Poppins",sans-serif;
+	font: 500 19px/22px "PT Sans",sans-serif;
 	letter-spacing: 0.6px;
 	margin: 0;
 	text-transform: capitalize;
@@ -6601,7 +6602,7 @@ footer .footer-right #footer-right {
 		}
 		.contact-us .data {
 		  	color: #878787;
-			font: 400 14px/22px "poppins",sans-serif;
+			font: 400 14px/22px "PT Sans",sans-serif;
 			position: relative;
 		}
 		footer .contact-us i:before {
@@ -6735,7 +6736,8 @@ opacity: 0;
     /* max-width:65%; */
 }
 .footer-address{
-    text-align:left;
+	text-align:left;
+	color:#878787;
 }
 
 .footer-powered{
@@ -6865,6 +6867,10 @@ input[name="search"]::placeholder{
 }
 #bf-brainyfilter-anchor{
 	display:none;
+}
+
+.bf-cur-symb input[type=text].bf-range-max, .bf-cur-symb input[type=text].bf-range-min, .bf-cur-symb input[type=text].bf-slider-input{
+	width:70px;
 }
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
