@@ -6884,6 +6884,12 @@ input[name="search"]::placeholder{
 	float:left;
 	margin-top: 10px;
 }
+
+.menu-category li.OT-Sub-List,
+.dropdown-menu .list-unstyled li.dropdown:not(:last-child),
+.dropdown-menu .list-unstyled li:not(:last-child){
+	border-bottom: 1px solid #eeeeee;
+}
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
         text-align:center;

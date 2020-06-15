@@ -50,7 +50,7 @@
 									<ul class="list-unstyled childs_2">
 									{% set wi = 0 %}
 									
-									{% for wi in wi..category.children[i]['children_level2']|length %}
+									{% for wi in wi..category.children[i]['children_level2']|length - 1 %} {# length - 1 для того чтобы в конце не выводился пустой элемент #}
 										<li><a href="{{ category.children[i]['children_level2'][wi]['href'] }}">
 										{{ category.children[i]['children_level2'][wi]['name'] }}</a>
 										</li>
