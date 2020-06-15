@@ -101,9 +101,12 @@ $(document).ready(function() {
 
 	$("#content > h1, .account-wishlist #content > h2, .account-address #content > h2, .account-download #content > h2").first().addClass("page-title");
 	
-	$("#content > .page-title").wrap("<div class='page-title-wrapper'><div class='container'></div></div>");
-	$(".page-title-wrapper .container").append($("ul.breadcrumb"));
+	$("#content > .page-title").wrap("<div class='page-title-wrapper'><div class='container'><div class='row'></div></div></div>");
+	$(".page-title-wrapper .row").append($("ul.breadcrumb"));
 	$(".page-title-wrapper").prependTo($(".header-content-title"));
+
+	$('.page-title-wrapper .page-title').wrap('<div class="col-sm-3" id="page-heading"></div>');
+	$('.page-title-wrapper .breadcrumb').wrap('<div class="col-sm-9"></div>');
 
 	
 	$('#column-left .product-thumb .image, #column-right .product-thumb .image').attr('class', 'image col-xs-4 col-sm-4 col-md-4');
