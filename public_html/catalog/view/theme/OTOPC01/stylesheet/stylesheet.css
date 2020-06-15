@@ -6758,7 +6758,8 @@ input[name="search"]::placeholder{
     outline:none;
 }
 
-.form-overlay, .one-click-form-overlay{
+.form-overlay, .one-click-form-overlay,
+.want-cheaper-form-overlay{
     position:fixed;
     top:0;
     left:0;
@@ -6771,7 +6772,7 @@ input[name="search"]::placeholder{
     justify-content:center;
 }
 
-.callback-form, .one-click-form{
+.callback-form, .one-click-form,.want-cheaper-form{
     background:#2C7CFE;
     width:400px;
     border-radius:8px;
@@ -6781,7 +6782,8 @@ input[name="search"]::placeholder{
 }
 
 .callback-form .form-close .fa-times,
-.one-click-form .form-close .fa-times{
+.one-click-form .form-close .fa-times,
+.want-cheaper-form .form-close .fa-times{
     font-size:24px;
     position:absolute;
     right:10px;
@@ -6790,22 +6792,26 @@ input[name="search"]::placeholder{
 }
 
 .callback-form label,
-.one-click-form label{
+.one-click-form label,
+.want-cheaper-form label{
     width:100%;
 }
 .callback-form h3,
-.one-click-form h3{
+.one-click-form h3,
+.want-cheaper-form h3{
     color:#fff;
     border:none;
 }
 .callback-form h3:after,
-.one-click-form h3:after
+.one-click-form h3:after,
+.want-cheaper-form h3:after
 {
     display:none;
 }
 
 .callback-form input[type="text"],
-.one-click-form input[type="text"]{
+.one-click-form input[type="text"],
+.want-cheaper-form input[type="text"]{
     color:#000;
 }
 .header__description{
@@ -6872,6 +6878,12 @@ input[name="search"]::placeholder{
 .bf-cur-symb input[type=text].bf-range-max, .bf-cur-symb input[type=text].bf-range-min, .bf-cur-symb input[type=text].bf-slider-input{
 	width:70px;
 }
+
+.want-cheaper-button{
+	width: 100%;
+	float:left;
+	margin-top: 10px;
+}
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
         text-align:center;
@@ -6908,5 +6920,10 @@ input[name="search"]::placeholder{
 	#product-category .breadcrumb{
 		width: 100%;
 		margin-left: auto;
+	}
+
+	.want-cheaper-form{
+		height: 80vh;
+		overflow-y: auto;
 	}
 }

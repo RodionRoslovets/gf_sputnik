@@ -10,6 +10,9 @@ class ControllerCommonFooter extends Controller {
 
 		$formcreator1 = new formcreator($this->registry);
 		$data['formcreator_id50'] = $formcreator1->initFeedback(50);
+
+		$formcreator = new formcreator($this->registry); 
+		$data['formcreator_id53'] = $formcreator->initFeedback(53);
 		
 		$data['footer_top'] = $this->load->controller('common/footer_top');
 		$data['footer_right'] = $this->load->controller('common/footer_right');

@@ -43,7 +43,26 @@ $(document).ready(function() {
         $('.form-close').on('click', function(e){
             $('.one-click-form-overlay').fadeOut();
 		})
+
+		$('.want-cheaper-button').on('click', function(){
+            $('.want-cheaper-form-overlay').fadeIn();
+        })
+        
+        $('.want-cheaper-form-overlay').on('click', function(e){
+            if(e.target.classList.contains('want-cheaper-form-overlay')){
+                $('.want-cheaper-form-overlay').fadeOut();
+            }
+        })
+        
+        $('.form-close').on('click', function(e){
+            $('.want-cheaper-form-overlay').fadeOut();
+		})
+
+		//	Добавление текста в форму хочу дешевле
 		
+		$('.want-cheaper-form .box-content').prepend('<p>Если вы хотите купить этот товар и видели на другом сайте данный товар дешевле, пожалуйста, заполните эти поля, возможно, мы действительно предоставим вам скидку.</p>')
+
+		$('.want-cheaper-form .box-content').append('<p>В акции участвуют только действующие крымские магазины.</p>')
 		// end popup callback
 
 		$('.cart_input_block .remove-button').on('click', function(){
