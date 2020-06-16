@@ -133,6 +133,7 @@ class ControllerProductCompare extends Controller {
 		$data['content_bottom'] = $this->load->controller('common/content_bottom');
 		$data['footer'] = $this->load->controller('common/footer');
 		$data['header'] = $this->load->controller('common/header');
+		$data['empty_compare'] = $this->language->get('empty_compare');
 
 		$this->response->setOutput($this->load->view('product/compare', $data));
 	}
