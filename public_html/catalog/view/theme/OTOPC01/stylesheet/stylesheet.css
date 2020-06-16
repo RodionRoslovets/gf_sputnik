@@ -3416,7 +3416,7 @@ s.bootstrap-datetimepicker-widget .accordion-toggle a.btn,
 .bootstrap-datetimepicker-widget .timepicker td a:hover,
 .bootstrap-datetimepicker-widget .timepicker td a:focus {color: #FFFFFF;}
 .bootstrap-datetimepicker-widget .accordion-toggle a.btn:hover,
-.bootstrap-datetimepicker-widget .timepicker td a span:hover, {background:#bc3b36 ;}
+.bootstrap-datetimepicker-widget .timepicker td a span:hover {background:#bc3b36;}
 
 .datepicker-days .table-condensed .day.today::before{border-bottom: 7px solid #2874f0;}
 .datepicker-days .table-condensed .day.active.today::before {
@@ -6367,7 +6367,7 @@ footer .footer-right #footer-right {
 #otcmsfooterservice .otcmsfooterservice .otfooterservice .service-block-content:hover .footer-service-img{
 	transform: rotateY(-180deg);
 	-webkit-transform: rotateY(-180deg);
-	-moz-transform: rotateY(-180deg));
+	-moz-transform: rotateY(-180deg);
 	-o-transform: rotateY(-180deg);
 	-ms-transform: rotateY(-180deg);
 }

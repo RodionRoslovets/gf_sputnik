@@ -10,16 +10,22 @@ class ModelCatalogOTQuickview extends Model{
 	public function getProductBySeoUrl($seo_url){
 		
 		$arrUrl = explode("/",$seo_url); // explode string to array
-		//var_dump($arrUrl);
+		// var_dump($arrUrl);
 		
 		$tmp = end($arrUrl); // just care the value of last item in array because that is the SEO url
-		//var_dump($tmp);
+		
+		// $tmp = explode('?', $tmp);
+
+		
 		
 		$result = $this->db->query("SELECT query FROM " . DB_PREFIX . "seo_url WHERE keyword LIKE '" . $tmp . "' ORDER BY keyword ASC");
+		// var_dump($result);
 		
 		// just get string result product_id=xxx
-		//var_dump($result->row['query']);
+		// var_dump($result->row['query']);
 		$tmp = explode("=",$result->row['query']);
+
+		// var_dump($tmp);
 		
 		return (int)$tmp[1];
 	}

@@ -21,8 +21,13 @@ var ot_quickview = {
 	},
 
 	'ajaxView'	: function (url) {
-		if(url.search('route=product/product') != -1) {
-			url = url.replace('route=product/product', 'route=product/ot_quickview');
+		// if(url.search('route=product/product') != -1) {
+		if(url.search('product_id') != -1) {
+			// url = url.replace('route=product/product', 'route=product/ot_quickview');
+
+			//фикс для предпросмотра, если у категории есть чпу, а у товара нет
+			prodId = url.slice(url.search('product_id='));
+			url = `${location.origin}/index.php?route=product/ot_quickview&${prodId}`;
 		} else {
 			url = 'index.php?route=product/ot_quickview/seoview&ourl=' + url;
 		}
