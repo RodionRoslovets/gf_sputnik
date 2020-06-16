@@ -6744,6 +6744,10 @@ opacity: 0;
     text-align:right;
 }
 
+.cart-heading{
+	display:none!important;
+}
+
 input[name="search"]::placeholder{
     font-family:Helvetica, sans-serif;
 }

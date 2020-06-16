@@ -127,6 +127,45 @@
 <script src="{{ script }}" type="text/javascript"></script>
 {% endfor %}
 
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(64893088, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/64893088" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169613853-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169613853-1');
+</script>
+
+<script>
+  $('.one-click-form form').on('submit',function(){ym(64893088,'reachGoal','1clik')});
+  $('.callback-form form').on('submit',function(){ym(64893088,'reachGoal','call_ back')});
+  $('#button-cart, .btn-cart').on('click',function(){ym(64893088,'reachGoal','added_to_cart')});
+  $('#button-payment-method').on('click',function(){ym(64893088,'reachGoal','ordered_goods')});
+</script>
+<script>
+  $('.one-click-form form').on('submit',function(){gtag('event', 'submit', {'event_category':  '1clik', 'event_action': 'clik'});});
+  $('.callback-form form').on('submit',function(){gtag('event', 'submit', {'event_category':  'call_back', 'event_action': 'clik'});});
+  $('#button-cart, .btn-cart').on('click',function(){gtag('event', 'click', {'event_category':  'added_to_cart', 'event_action': 'clik'});});
+  $('#button-payment-method').on('click',function(){gtag('event', 'click', {'event_category':  'ordered_goods', 'event_action': 'clik'});});
+</script>
+
+
 <!--
 OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
 Please donate via PayPal to donate@opencart.com
