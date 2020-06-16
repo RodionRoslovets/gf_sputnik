@@ -15,4 +15,4 @@ $_['text_order']        = 'История заказов';
 $_['text_wishlist']     = 'Закладки';
 $_['text_newsletter']   = 'Рассылка';
 $_['copyright']      = ' %s &copy; %s';
-$_['text_powered']      = '<a href="https://goodfellazz.ru/" target="blank">Разработка</a> и <a href="https://goodfellazz.ru/" target="blank">продвижение</a> <a href="https://goodfellazz.ru/" target="blank">by Good Fellazz</a><br />';
+$_['text_powered']      = '<a href="https://goodfellazz.ru/" target="blank">Разработка сайта</a> и <a href="https://goodfellazz.ru/" target="blank">продвижение сайта</a> <a href="https://goodfellazz.ru/" target="blank">by Good Fellazz</a><br />';
