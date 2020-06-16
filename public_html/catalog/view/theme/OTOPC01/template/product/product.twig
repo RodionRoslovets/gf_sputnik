@@ -755,13 +755,13 @@ if(window.location.hash.substr(1)=='tab-review') {
     }, 2000);
 }
 
-	//$('.thumbnails').magnificPopup({
-	//	type:'image',
-	//	delegate: 'a',
-	//	gallery: {
-	//		enabled: true
-	//	}
-	//});
+	$('.thumbnails').magnificPopup({
+		type:'image',
+		delegate: 'a',
+		gallery: {
+			enabled: true
+		}
+	});
 
 	$('.thumbnails').click((e)=>{
 		e.preventDefault();
