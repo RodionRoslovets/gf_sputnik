@@ -225,7 +225,8 @@ select.form-control, textarea.form-control, input[type="text"].form-control, inp
     padding: 0;
     position: absolute;
     right: auto;
-    top: 0;
+	top: 0;
+	min-width:270px;
 }
 .main-category-list .menu-category li.OT-Sub-List .dropdown-inner ul.single-dropdown-menu  li.dropdown > a.single-dropdown::after {
     content: "\f105";

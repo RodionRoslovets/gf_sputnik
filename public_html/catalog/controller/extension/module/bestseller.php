@@ -17,7 +17,18 @@ class ControllerExtensionModuleBestSeller extends Controller {
 
 		$data['products'] = array();
 
-		$results = $this->model_catalog_product->getBestSellerProducts($setting['limit']);
+		// $results = $this->model_catalog_product->getBestSellerProducts($setting['limit']);
+
+		//вывод определенных товаров в хитах продаж
+		$products_ids = array(1,2,262,263,267,268,354,355,358,359,581,582,892,897,901,980,983,1008);
+
+		$results = array();
+
+		foreach($products_ids as $id){
+			$results[] = $this->model_catalog_product->getProduct($id);
+		}
+
+		//вывод определенных товаров в хитах продаж, конец
 
 		if ($results) {
 			foreach ($results as $result) {
