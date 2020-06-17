@@ -1152,7 +1152,7 @@ span.hidden-md, span.hidden-lg {
 }
 .header-right-cms {
   float: right;
-  padding:24px 0;
+  padding:49px 0;
   
 }
 .header-right-cms a{
@@ -1597,7 +1597,7 @@ header .full-header {
 	-khtml-border-radius: 8px;
 	display: inline-block;
 	float: none;
-	margin: 28px 0;
+	margin: 37px 0;
 	vertical-align: top;
 	width: auto;
 }
@@ -4720,7 +4720,7 @@ h2.price {
 		right: auto;
 	}
 	#cart #cart-total {
-		left: 20px;
+		left: 30px;
 	}
 	.header-bottom {
 	  width: 100%;
