@@ -65,6 +65,20 @@
 				<!--<p class="description">{{ product.description }}</p>-->
 			</div>
 			<div class="button-wrapper">
+			<div class="button-group">
+				<button class="btn-cart" type="button" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i>
+				 <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span>
+				</button>
+				{# <button class="btn-wishlist" title="{{ button_wishlist }}"  onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i>
+				<span title="{{ button_wishlist }}">{{ button_wishlist }}</span>
+				</button> #}
+				<button class="btn-compare" title="{{ button_compare }}"  onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i>
+				<span title="{{ button_compare }}">{{ button_compare }}</span>
+				</button>
+				<button class="btn-quickview" type="button" title="{{ button_quickview }}" onclick="ot_quickview.ajaxView('{{ product.href }}')"><i class="fa fa-eye"></i>
+				<span title="{{ button_quickview }}">{{ button_quickview }}</span>
+		</button>
+			  </div>
 			  {% if product.price %}
 				<div class="price">
 				  {% if not product.special %}
@@ -79,20 +93,7 @@
 				  {% endif %} 
 				</div>
 			  {% endif %}
-			  <div class="button-group">
-				<button class="btn-cart" type="button" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i>
-				 <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span>
-				</button>
-				{# <button class="btn-wishlist" title="{{ button_wishlist }}"  onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i>
-				<span title="{{ button_wishlist }}">{{ button_wishlist }}</span>
-				</button> #}
-				<button class="btn-compare" title="{{ button_compare }}"  onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i>
-				<span title="{{ button_compare }}">{{ button_compare }}</span>
-				</button>
-				<button class="btn-quickview" type="button" title="{{ button_quickview }}" onclick="ot_quickview.ajaxView('{{ product.href }}')"><i class="fa fa-eye"></i>
-				<span title="{{ button_quickview }}">{{ button_quickview }}</span>
-		</button>
-			  </div>
+			  
 			</div>				
 			</div>		
 		</div>

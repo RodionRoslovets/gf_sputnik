@@ -158,18 +158,7 @@
  
 			</div>
 			<div class="button-wrapper">
-			  {% if product.price %}
-                <div class="price">
-				  {% if not product.special %}
-                    {{ product.price }}
-                  {% else %}
-				    <span class="price-new">{{ product.special }}</span>
-					<span class="price-old">{{ product.price }}</span>
-				  {% endif %}
-                  {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %}
-				</div>
-              {% endif %}
-			  <div class="button-group">
+			<div class="button-group">
 				<button class="btn-cart" type="button" title="{{ button_cart }}" onclick="cart.add('{{ product.product_id }}', '{{ product.minimum }}');"><i class="fa fa-shopping-cart"></i>
 				  <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span>
 				</button>
@@ -183,6 +172,18 @@
 				<span title="{{ button_quickview }}">{{ button_quickview }}</span>
 				</button>
               </div>
+			  {% if product.price %}
+                <div class="price">
+				  {% if not product.special %}
+                    {{ product.price }}
+                  {% else %}
+				    <span class="price-new">{{ product.special }}</span>
+					<span class="price-old">{{ product.price }}</span>
+				  {% endif %}
+                  {% if product.tax %} <span class="price-tax">{{ text_tax }} {{ product.tax }}</span> {% endif %}
+				</div>
+              {% endif %}
+			  
 			</div>
 		  </div>   
          </div>

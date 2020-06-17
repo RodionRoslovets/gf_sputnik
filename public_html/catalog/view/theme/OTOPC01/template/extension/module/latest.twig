@@ -38,6 +38,13 @@
         
       </div>
 	  <div class="button-wrapper">
+<div class="button-group">
+			<button class="btn-cart" type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
+			{# <button class="btn-wishlist" type="button" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i>	</button> #}
+			<button class="btn-compare" type="button" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
+			<button class="btn-quickview" type="button" title="{{ button_quickview }}" onclick="ot_quickview.ajaxView('{{ product.href }}')"><i class="fa fa-eye"></i>
+			</button>
+      </div>
 	  	{% if product.price %}
         <div class="price">
           {% if not product.special %}
@@ -51,13 +58,7 @@
         </div>
         {% endif %}
 		
-	  	<div class="button-group">
-			<button class="btn-cart" type="button" onclick="cart.add('{{ product.product_id }}');"><i class="fa fa-shopping-cart"></i> <span class="hidden-xs hidden-sm hidden-md">{{ button_cart }}</span></button>
-			{# <button class="btn-wishlist" type="button" title="{{ button_wishlist }}" onclick="wishlist.add('{{ product.product_id }}');"><i class="fa fa-heart"></i>	</button> #}
-			<button class="btn-compare" type="button" title="{{ button_compare }}" onclick="compare.add('{{ product.product_id }}');"><i class="fa fa-exchange"></i></button>
-			<button class="btn-quickview" type="button" title="{{ button_quickview }}" onclick="ot_quickview.ajaxView('{{ product.href }}')"><i class="fa fa-eye"></i>
-		</button>
-      </div>
+	  	
 	  </div>
 	 </div>
     </div>
