@@ -6904,6 +6904,11 @@ input[name="search"]::placeholder{
 #cart button:focus i.fa-shopping-bag{
 	color:#FFE11B;
 }
+
+.list-group .category-li:not(:last-child),
+.list-group .category-li.category-active ul li:not(:last-child){
+	border-bottom: 1px solid #eeeeee;
+}
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
         text-align:center;
