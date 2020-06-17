@@ -6819,6 +6819,19 @@ input[name="search"]::placeholder{
 .want-cheaper-form input[type="text"]{
     color:#000;
 }
+
+.callback-form button[type="submit"],
+.one-click-form button[type="submit"],
+.one-click-form .g-recaptcha,
+.want-cheaper-form button[type="submit"],
+.want-cheaper-form .g-recaptcha{
+	margin-top: 40px;
+}
+
+.callback-form .g-recaptcha{
+	margin-top: 25px;
+}
+
 .header__description{
     color:#fff;
     margin:0;
@@ -6836,9 +6849,9 @@ input[name="search"]::placeholder{
     flex-direction:column;
     justify-content:space-between;
 }
-#form-formcreator49 .form-group button{
+/* #form-formcreator49 .form-group button{
     margin-top:20px;
-}
+} */
 
 #form-formcreator49 .g-recaptcha div, #form-formcreator49 .g-recaptcha iframe {
     margin: auto;

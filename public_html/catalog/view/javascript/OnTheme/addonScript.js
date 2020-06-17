@@ -330,12 +330,14 @@ $(".products-list .customNavigation").addClass('owl-navigation');
 	
 /* ---------------- End ontheme link more menu ----------------------*/
 /*-----------start menu toggle ------------*/
+	let menuTimer
 	$('.left-main-menu .OT-panel-heading').click(function() { 
 		$('.left-main-menu .OT-panel-heading').toggleClass('active'); 
 		$('.left-main-menu .menu-category').slideToggle("2000"); 
+		menuTimer = setTimeout(function(){$('.left-main-menu .menu-category').slideUp("2000"); }, 3000)
 	}); 
 
-	let menuTimer
+	
 
 	$('.cat-menu .dropmenu').on('mouseleave', function(){
 		menuTimer = setTimeout(function(){$('.left-main-menu .menu-category').slideUp("2000"); }, 3000)
