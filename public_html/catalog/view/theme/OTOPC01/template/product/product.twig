@@ -623,7 +623,7 @@ $('select[name=\'recurring_id\'], input[name="quantity"]').change(function(){
 					 
 					 // Need to set timeout otherwise it wont update the total
 					setTimeout(function () {
-						$('#cart > button').html('<i class="fa fa-shopping-cart"></i><span class="cart-heading">Cart</span><span id="cart-total"> ' + json['total'] + '</span>');
+						$('#cart > button').html('<i class="fa fa-shopping-bag"></i><span class="cart-heading">Cart</span><span id="cart-total"> ' + json['total'] + '</span>');
 					}, 100);
 				     					
 					$('#cart > ul').load('index.php?route=common/cart/info ul li');
