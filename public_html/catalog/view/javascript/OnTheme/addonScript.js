@@ -334,6 +334,15 @@ $(".products-list .customNavigation").addClass('owl-navigation');
 		$('.left-main-menu .OT-panel-heading').toggleClass('active'); 
 		$('.left-main-menu .menu-category').slideToggle("2000"); 
 	}); 
+
+	let menuTimer
+
+	$('.cat-menu .dropmenu').on('mouseleave', function(){
+		menuTimer = setTimeout(function(){$('.left-main-menu .menu-category').slideUp("2000"); }, 3000)
+	})
+	$('.cat-menu .dropmenu').on('mouseover', function(){
+		clearTimeout(menuTimer)
+	})
 	
 /*-----------End menu toggle ------------*/
 /* ---------------- start ontheme more menu ----------------------*/
