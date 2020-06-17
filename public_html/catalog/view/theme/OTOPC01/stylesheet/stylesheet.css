@@ -6895,6 +6895,10 @@ input[name="search"]::placeholder{
 .dropdown-menu .list-unstyled li:not(:last-child){
 	border-bottom: 1px solid #eeeeee;
 }
+
+.rating{
+	display:none;
+}
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
         text-align:center;
