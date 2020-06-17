@@ -1406,16 +1406,16 @@ span.hidden-md, span.hidden-lg {
 	bottom: auto;
 	color: #ffe11b;
 	float: right;
-	font-size: 14px;
+	font-size: 15px;
 	font-weight: 500;
 	height: 16px;
-	left: 20px;
+	left: 24px;
 	line-height: 18px;
 	margin: auto;
 	position: absolute;
 	right: auto;
 	text-align: center;
-	top: 7px;
+	top: 4px;
 	width: 16px;
 	z-index: 1;
 }
