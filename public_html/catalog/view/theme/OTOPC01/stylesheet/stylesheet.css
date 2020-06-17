@@ -6922,6 +6922,18 @@ input[name="search"]::placeholder{
 .list-group .category-li.category-active ul li:not(:last-child){
 	border-bottom: 1px solid #eeeeee;
 }
+
+.callback-form .box-heading{
+	background:transparent;
+	border-bottom:none;
+	text-shadow: none;
+	padding: 0;
+}
+
+.callback-form .box{
+	border:none;
+}
+
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
         text-align:center;
