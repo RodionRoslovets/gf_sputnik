@@ -3892,7 +3892,7 @@ footer .footer-column h5 {
 }
 #product-category .breadcrumb{
 	width: 78%;
-	margin-left: auto;
+	/* margin-left: auto; */
 }
 .breadcrumb i:hover {
 	color: #000;
@@ -6939,6 +6939,17 @@ input[name="search"]::placeholder{
 	border:none;
 }
 
+.product-category__page-top{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.product-category__page-top .category-name{
+	margin:0;
+}
+
 @media screen and (max-width:767px){
     .footer-address, .footer-powered{
         text-align:center;
@@ -6980,5 +6991,9 @@ input[name="search"]::placeholder{
 	.want-cheaper-form{
 		height: 80vh;
 		overflow-y: auto;
+	}
+
+	.product-category__page-top{
+		flex-direction:column;
 	}
 }
