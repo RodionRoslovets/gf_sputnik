@@ -97,7 +97,7 @@ $(".additional-images-container .customNavigation").addClass('owl-navigation');
             {% if reward %}
             <tr><td>{{ text_reward }}</td><td class="product-info-value">{{ reward }}</td></tr>
             {% endif %}
-            <tr><td>{{ text_stock }}</td><td class="product-info-value">{{ stock }}</td></tr>
+            <tr><td>{{ text_stock }}</td><td class="product-info-value product-info__in-stock">{{ stock }}</td></tr>
           </table>
 
 		  <!-- Product Rating START -->
@@ -295,6 +295,7 @@ $(".additional-images-container .customNavigation").addClass('owl-navigation');
               <input type="text" name="quantity" value="{{ minimum }}" size="2" id="input-quantity" class="form-control" />
               <input type="hidden" name="product_id" value="{{ product_id }}" />
               <button type="button" id="button-cart" data-loading-text="{{ text_loading }}" class="btn btn-primary btn-lg btn-block">{{ button_cart }}</button>
+			  <button type="button" class="btn btn-primary one-click-button" style="padding: 5px;height: 41px;">Купить в 1 клик</button>
             </div>
             {% if minimum > 1 %}
             <div class="alert alert-info"><i class="fa fa-info-circle"></i> {{ text_minimum }}</div>
@@ -310,10 +311,10 @@ $(".additional-images-container .customNavigation").addClass('owl-navigation');
             <button class="btn btn-default product-btn-compare" type="button" class="btn btn-default" title="{{ button_compare }}" onclick="compare.add('{{ product_id }}');"><i class="fa fa-exchange"></i>
 			{{ button_compare }}
 			</button>
-			<button type="button" class="btn btn-primary one-click-button">Заказать в 1 клик</button>
+			<span class="want-cheaper-button">Хочу дешевле!</span>
 			
           </div>
-		  <button type="button" class="btn btn-primary want-cheaper-button">Хочу дешевле!</button>
+		  
 		  <!-- Product Wishlist Compare END -->
 			
 
