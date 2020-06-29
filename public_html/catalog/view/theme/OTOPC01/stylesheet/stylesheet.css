@@ -6933,7 +6933,7 @@ input[name="search"]::placeholder{
 	cursor:pointer;
 }
 
-.menu-category li.OT-Sub-List,
+.menu-category li:not(:last-child),
 .dropdown-menu .list-unstyled li.dropdown:not(:last-child),
 .dropdown-menu .list-unstyled li:not(:last-child){
 	border-bottom: 1px solid #eeeeee;
