@@ -9,7 +9,7 @@
         <h3 class="modal-title" id="feedbackModalLabel{{ module_id }}">{{ module_name }}</h3>
       </div>
       <div class="modal-body">
-        <form role="form" data-toggle="validator" enctype="multipart/form-data" id="form-formcreator{{ module_id }}">
+        <form data-toggle="validator" enctype="multipart/form-data" id="form-formcreator{{ module_id }}">
           {% if fields %}
           {% set k = 0 %}
           {% set field_row = 0 %}
@@ -116,8 +116,8 @@
                  {% elseif  field.type == 'date'  and  field.field_status %}
                     {% set k = k + 1 %}
                     {% if k == 1 %}
-                      <script type="text/javascript" src="catalog/view/javascript/bootstrap/js/bootstrap-datepicker.js"></script>
-                      <script type="text/javascript" src="catalog/view/javascript/bootstrap/js/bootstrap-datepicker.ru.js"></script>
+                      <script src="catalog/view/javascript/bootstrap/js/bootstrap-datepicker.js"></script>
+                      <script src="catalog/view/javascript/bootstrap/js/bootstrap-datepicker.ru.js"></script>
                       <link rel="stylesheet" href="catalog/view/javascript/bootstrap/css/bootstrap-datepicker.css" />
                     {% endif %}
                   {% if field.required %}
@@ -133,7 +133,7 @@
                         <input type="text" id="formInputDate{{ module_id }}-{{ field_row }}" class="form-control" name="form_input[{{ field_row }}][{{ field.name }}]"  placeholder="{{ field.name }}">
                     </div>
                   {% endif %} 
-                   <script type="text/javascript">
+                   <script>
                       $(function () {
                           $('#formInputDate{{ module_id }}-{{ field_row }}').datepicker({
                             language: 'ru',
@@ -158,7 +158,7 @@
   </div>
 </div>
 
-<script type="text/javascript">
+<script>
       $('#form-formcreator{{ module_id }}').on('submit', function(e) {
         e.preventDefault(); 
         var that = $(e.target);          

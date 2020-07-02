@@ -11,7 +11,7 @@
       <ul class="nav navbar-nav">
 		{% for category in categories %}
         {% if category.children %}
-        <li class="dropdown">
+        <li class="dropdown 1">
 			<a href="{{ category.href }}">{{ category.name }}</a>
           <div class="dropdown-menu">
           <div class="dropdown-inner">
@@ -20,7 +20,7 @@
                
 				{% for child in children %}		{# 2 Level Sub Categories START #}
 				{% if child.childs %}
-                <li class="dropdown"><a href="{{ child.href }}">{{ child.name }}</a>
+                <li class="dropdown 1"><a href="{{ child.href }}">{{ child.name }}</a>
 
 					<div class="dropdown-menu">
           			<div class="dropdown-inner">
