@@ -125,6 +125,10 @@ class ControllerExtensionModuleFormcreator extends Controller{
 
 				if($feedback_options['module_id'] == '50'){
 					$mail->setSubject('Заказ в 1 клик');
+				} elseif($feedback_options['module_id'] == '49'){
+					$mail->setSubject('Заказ звонка');
+				} elseif($feedback_options['module_id'] == '53'){
+					$mail->setSubject('Хочу дешевле');
 				} else {
 					$mail->setSubject(html_entity_decode(sprintf($this->language->get('entry_email'), 'NAMEString', ENT_QUOTES, 'UTF-8')));
 				}
