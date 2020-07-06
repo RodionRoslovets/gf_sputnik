@@ -121,8 +121,14 @@ class ControllerExtensionModuleFormcreator extends Controller{
 				}
 			  	//$mail->setFrom($this->config->get('config_email'));
 			  	$mail->setFrom('info@'.$domain);
-			  	$mail->setSender($this->config->get('config_name'));
-			  	$mail->setSubject(html_entity_decode(sprintf($this->language->get('entry_email'), 'NAMEString', ENT_QUOTES, 'UTF-8')));
+				$mail->setSender($this->config->get('config_name'));
+
+				if($feedback_options['module_id'] == '50'){
+					$mail->setSubject('Заказ в 1 клик');
+				} else {
+					$mail->setSubject(html_entity_decode(sprintf($this->language->get('entry_email'), 'NAMEString', ENT_QUOTES, 'UTF-8')));
+				}
+			  	
 			  	
 				$form = $json['form_input'];
 						foreach ($form as $form_box) {
