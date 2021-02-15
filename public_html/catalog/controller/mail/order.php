@@ -442,6 +442,7 @@ class ControllerMailOrder extends Controller {
 				);
 			}
 
+			//Добавили имя, телефон и способ доставки
 			$data['customer_name'] = $order_info['firstname'];
 			$data['customer_phone'] = $order_info['telephone'];
 			$data['customer_shipping_method'] = $order_info['shipping_method'];

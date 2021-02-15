@@ -201,6 +201,61 @@
         <div class="col-xs-6 text-right">{{ pagination }}</div>
       </div>
 	  <!-- Category pagination END -->
+
+	   <!-- Category Description START -->
+       {# <h1 class="category-name">{{ heading_title }}</h1> #}
+
+      
+	  <div class="category-description">
+      {# <div class="row"> #}
+	    {# {% if thumb %}
+        <div class="col-sm-4 category-image">
+			<div class="category-bg">
+				<a class="cat-img"><img src="{{ thumb }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-thumbnail" /></a>
+			</div>
+		</div>
+        {% endif %} #}
+		
+		{# {% if thumb or description %} #}
+		
+        {% if description %}
+		<div class="block-description col-12">
+        <div class="category-content">{{ description }}</div>
+        {% endif %}
+		
+		<!-- Category listing START -->
+		  {# {% if categories %}
+		  <div class="category-list">
+		  <h3>{{ text_refine }}</h3>
+		  <div class="row">
+			<div class="col-sm-12">
+			  <ul>
+				{% for category in categories %}
+				<li>
+					<div class="subcategory-image">
+						{% if category.img %}
+							<a href="{{ category.href }}"><img src="{{ category.img }}" alt="" /></a>
+						{% endif %}
+					</div>
+					<h5><a href="{{ category.href }}">{{ category.name }}</a></h5>
+				</li>
+				{% endfor %}
+			  </ul>
+			</div>
+		  </div>
+		  </div>
+		  {% endif %} #}
+	  	<!-- Category listing END -->
+		{# <p class="category-compare"><a href="{{ compare }}" id="compare-total">{{ text_compare }}</a></p> #}
+		{# </div> #}
+		{# {% endif %} #}
+		
+		</div>
+		</div>
+      
+
+	  <!-- Category Description END -->
+
       {% endif %}
       {% if not categories and not products %}
       <p class="text-empty">{{ text_empty }}</p>

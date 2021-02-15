@@ -26,7 +26,7 @@
       {% else %}
         {% set class = 'col-xs-12 col-sm-6 col-md-6' %}
       {% endif %}
-	  	<div class="product-block">
+	  	<div class="product-block" itemscope itemtype="http://schema.org/Product">
         <div class="{{ class }} product-images col-xs-12 col-md-6">
 		{% if thumb or images %}
 		  <!-- Product Image thumbnails START -->
@@ -34,7 +34,7 @@
             {% if thumb %}
             <div class="product-image">
 			  <a class="thumbnail" href="{{ popup }}" title="{{ heading_title }}">
-			  <img src="{{ thumb }}" title="{{ heading_title }}" style="min-height:330px" data-zoom-image="{{ popup }}" alt="{{ heading_title }}" />
+			  <img itemprop="image" src="{{ thumb }}" title="{{ heading_title }}" style="min-height:330px" data-zoom-image="{{ popup }}" alt="{{ heading_title }}" />
 			  {% if special %}
 				 <span class="product-sale-icon">Sale</span>
 			  {% endif %}
@@ -87,13 +87,13 @@ $(".additional-images-container .customNavigation").addClass('owl-navigation');
         {% set class = 'col-xs-12 col-sm-6 col-md-6' %}
         {% endif %}
         <div class="{{ class }} product-details col-xs-12 col-md-6">
-		<h1 class="product-name">{{ heading_title }}</h1>
+		<h1 itemprop="name" class="product-name">{{ heading_title }}</h1>
 		
 		<table class="product-info">
             {% if manufacturer %}
-            <tr><td>{{ text_manufacturer }}</td><td class="product-info-value"><a href="{{ manufacturers }}">{{ manufacturer }}</a></td></tr>
+            <tr><td>{{ text_manufacturer }}</td><td class="product-info-value"><a href="{{ manufacturers }}" itemprop="brand">{{ manufacturer }}</a></td></tr>
             {% endif %}
-            <tr><td>{{ text_model }}</td><td class="product-info-value">{{ model }}</td></tr>
+            <tr><td>{{ text_model }}</td><td class="product-info-value" itemprop="model">{{ model }}</td></tr>
             {% if reward %}
             <tr><td>{{ text_reward }}</td><td class="product-info-value">{{ reward }}</td></tr>
             {% endif %}
@@ -119,10 +119,10 @@ $(".additional-images-container .customNavigation").addClass('owl-navigation');
 		  <!-- Product Rating END -->
 
           {% if price %}
-          <ul class="list-unstyled product-price">
+          <ul class="list-unstyled product-price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
             {% if not special %}
             <li>
-              <h2>{{ price }}</h2>
+              <h2 itemprop="price">{{ price }}</h2>
             </li>
             {% else %}
 			<li>
@@ -338,7 +338,7 @@ $(".additional-images-container .customNavigation").addClass('owl-navigation');
             {% endif %}
           </ul>
           <div class="tab-content">
-            <div class="tab-pane active" id="tab-description">{{ description }}</div>
+            <div class="tab-pane active" id="tab-description" itemprop="description">{{ description }}</div>
             {% if attribute_groups %}
             <div class="tab-pane" id="tab-specification">
               <table class="table table-bordered">

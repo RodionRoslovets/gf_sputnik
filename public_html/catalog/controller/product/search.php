@@ -199,6 +199,9 @@ class ControllerProductSearch extends Controller {
 
 				if ($this->customer->isLogged() || !$this->config->get('config_customer_price')) {
 					$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					if($result['price'] == 0){
+						$price = 'Уточняйте у менеджера';
+					}
 				} else {
 					$price = false;
 				}

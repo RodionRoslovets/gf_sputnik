@@ -447,7 +447,7 @@ class ControllerProductProduct extends Controller {
 			$data['header'] = $this->load->controller('common/header');
 
 			if($product_info['price'] == '0'){
-				$data['price'] = 'Ожидается поступление';
+				$data['price'] = 'Уточняйте у менеджера';
 			}
 
 			$this->response->setOutput($this->load->view('error/not_found', $data));
